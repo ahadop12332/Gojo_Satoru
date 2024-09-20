@@ -32,10 +32,9 @@ async def gen_cmds_kb(m: Message or CallbackQuery):
 
     return [kb[i : i + 3] for i in range(0, len(kb), 3)]
 
+PM_START_TEXT = """
+**Hy {}
 
-async def gen_start_kb(q: Message or CallbackQuery):
-    """Generate keyboard with start menu options."""
-    return ikb(
         [
             [
                 (
